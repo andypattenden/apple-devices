@@ -21,6 +21,8 @@
 		border-radius: 100%;
 		box-sizing: border-box;
 		content: '';
+
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+0,1+100 */
 		background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6+ */
 		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
 		background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
@@ -47,6 +49,7 @@
 			bottom: 1px;
 			left: 0;
 			right: 1px;
+			/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#004799+0,0075d6+22,006ec9+29,000000+65,000000+65 */
 			background: rgb(0,71,153); /* Old browsers */
 			background: -moz-radial-gradient(center, ellipse cover, rgba(0,71,153,1) 0%, rgba(0,117,214,1) 22%, rgba(0,110,201,1) 29%, rgba(0,0,0,1) 65%, rgba(0,0,0,1) 65%); /* FF3.6+ */
 			background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(0,71,153,1)), color-stop(22%,rgba(0,117,214,1)), color-stop(29%,rgba(0,110,201,1)), color-stop(65%,rgba(0,0,0,1)), color-stop(65%,rgba(0,0,0,1))); /* Chrome,Safari4+ */
