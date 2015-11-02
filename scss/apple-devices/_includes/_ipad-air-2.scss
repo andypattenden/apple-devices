@@ -1,0 +1,96 @@
+// Uses iPad Air 2 dimensions
+
+// TODO - turn into mixin
+.ipad {
+	$bezelSideWidth: 4.649790523%;
+	$bezelTopBottomWidth: 10.883932259%;
+	$buttonWidth: 6.254794359%;
+	$buttonHeight: 4.416666667%;
+
+	position: relative;
+	width: $width;
+	padding-top: 141.617985484%;
+	background-color: black;
+	border-radius: 4%;
+
+	.camera,
+	.btn {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%) rotate(45deg);
+		border-radius: 100%;
+		box-sizing: border-box;
+		content: '';
+		background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* IE10+ */
+		background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C */
+
+		&:after {
+			position: absolute;
+			content: '';
+		    z-index: -1;
+		    border-radius: 100%;
+		}
+	}
+
+	/* Camera */
+	.camera {
+		top: 3%;
+		width: 1.4456836%;
+		height: 1.0208333%;
+
+		&:after {
+			top: -1px;
+			bottom: 1px;
+			left: 0;
+			right: 1px;
+			background: rgb(0,71,153); /* Old browsers */
+			background: -moz-radial-gradient(center, ellipse cover, rgba(0,71,153,1) 0%, rgba(0,117,214,1) 22%, rgba(0,110,201,1) 29%, rgba(0,0,0,1) 65%, rgba(0,0,0,1) 65%); /* FF3.6+ */
+			background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(0,71,153,1)), color-stop(22%,rgba(0,117,214,1)), color-stop(29%,rgba(0,110,201,1)), color-stop(65%,rgba(0,0,0,1)), color-stop(65%,rgba(0,0,0,1))); /* Chrome,Safari4+ */
+			background: -webkit-radial-gradient(center, ellipse cover, rgba(0,71,153,1) 0%,rgba(0,117,214,1) 22%,rgba(0,110,201,1) 29%,rgba(0,0,0,1) 65%,rgba(0,0,0,1) 65%); /* Chrome10+,Safari5.1+ */
+			background: -o-radial-gradient(center, ellipse cover, rgba(0,71,153,1) 0%,rgba(0,117,214,1) 22%,rgba(0,110,201,1) 29%,rgba(0,0,0,1) 65%,rgba(0,0,0,1) 65%); /* Opera 12+ */
+			background: -ms-radial-gradient(center, ellipse cover, rgba(0,71,153,1) 0%,rgba(0,117,214,1) 22%,rgba(0,110,201,1) 29%,rgba(0,0,0,1) 65%,rgba(0,0,0,1) 65%); /* IE10+ */
+			background: radial-gradient(ellipse at center, rgba(0,71,153,1) 0%,rgba(0,117,214,1) 22%,rgba(0,110,201,1) 29%,rgba(0,0,0,1) 65%,rgba(0,0,0,1) 65%); /* W3C */
+		}
+	}
+
+	/* Button */
+	.btn {
+		bottom: 1.25%;
+		width: $buttonWidth;
+		height: $buttonHeight;
+		z-index: 0;
+
+		&:after {
+			top: -2px;
+			bottom: 2px;
+			left: 1px;
+			right: 2px;
+			background-color: black;
+		}
+	}
+
+	&.landscape {
+		// TODO
+	}
+
+	.screen {
+		position: absolute;
+		background-color: white;
+		overflow: hidden;
+
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		margin: $bezelTopBottomWidth $bezelSideWidth;
+
+		img {
+			height: 100%;
+			width: auto;
+		}
+	}
+}
